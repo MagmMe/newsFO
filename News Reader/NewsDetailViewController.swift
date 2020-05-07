@@ -34,6 +34,20 @@ class NewsDetailViewController: UIViewController, WKNavigationDelegate {
         
     }
     
-    
+   func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
+   {
+       webView.evaluateJavaScript("document.readyState", completionHandler: { result, error in
+
+           if result == nil || error != nil {
+               return
+           }
+
+           webView.evaluateJavaScript("document.body.offsetHeight", completionHandler: { result, error in
+               if let height = result as? CGFloat {
+                   self.heightConstraint?.constant = height
+               }
+           })
+       })
+   }
 
 }

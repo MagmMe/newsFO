@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailViewController" customModule="News_Reader" customModuleProvider="target">
             <connections>
                 <outlet property="authorLabel" destination="8hr-pg-GX4" id="7AE-Xv-Moq"/>
-                <outlet property="heightConstraint" destination="kei-v4-Glv" id="54R-xr-l7Q"/>
+                <outlet property="heightConstraint" destination="kei-v4-Glv" id="WEh-xL-DzG"/>
                 <outlet property="imageView" destination="1I5-xp-IqD" id="deB-gU-QHU"/>
                 <outlet property="titleLabel" destination="4vg-qN-xy4" id="JjU-s9-84T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
